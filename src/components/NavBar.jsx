@@ -1,5 +1,5 @@
 import React from 'react';
-import Button from './Button';
+import 'tailwindcss/tailwind.css';
 
 const Navbar = () => {
   return (
@@ -14,10 +14,9 @@ const Navbar = () => {
             <div className="hidden md:block">
               <div className="ml-10 flex items-baseline space-x-4">
                 {/* Coloque os links da navbar aqui */}
-                <a href="#" className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Link 1</a>
-                <a href="#" className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Link 2</a>
-                <a href="#" className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Link 3</a>
-                <Button/>
+                <a href="#" className="text-gray-300 hover:bg-rose-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Semanas</a>
+                <a href="#" className="text-gray-300 hover:bg-rose-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Meses</a>                
+                
               </div>
             </div>
           </div>
