@@ -8,7 +8,7 @@ const Layout = () => {
           <div className="flex items-center justify-center h-20">
             <div className="flex items-center">
               <div className="flex-shrink-0"> 
-                <span className="text-white">Logo</span>
+                {/* <span className="text-white">Logo</span> */}
               </div>
               <div className="hidden md:block">
                 <div className="ml-10 flex items-baseline space-x-4"> 
@@ -22,13 +22,13 @@ const Layout = () => {
                   <Link to="/day_of_week"
                     className="text-gray-300 hover:bg-rose-300 hover:text-white 
                     px-3 py-2 rounded-md text-sm font-medium">
-                      Semanas
+                      Weeks
                   </Link>
 
-                  <Link to="/"
+                  <Link to="/month"
                     className="text-gray-300 hover:bg-rose-300 hover:text-white 
                     px-3 py-2 rounded-md text-sm font-medium">
-                      Meses
+                      Months
                   </Link>  
 
                   <Link to="/login"
