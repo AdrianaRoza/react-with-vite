@@ -14,8 +14,8 @@ const Layout = () => {
                 <div className="ml-10 flex items-baseline space-x-4"> 
 
                 <Link to="/"
-                    className="text-gray-300 hover:bg-rose-300 hover:text-white 
-                    px-3 py-2 rounded-md text-sm font-medium">
+                    className="px-3 py-2 rounded-md text-sm font-medium
+                    text-gray-300 hover:bg-rose-300 hover:text-white">
                       Home
                   </Link>
 
@@ -35,6 +35,12 @@ const Layout = () => {
                     className="text-gray-300 hover:bg-rose-300 hover:text-white 
                     px-3 py-2 rounded-md text-sm font-medium">
                       Login
+                  </Link>
+
+                  <Link to="/opposite"
+                    className="text-gray-300 hover:bg-rose-300 hover:text-white 
+                    px-3 py-2 rounded-md text-sm font-medium">
+                      Opposite
                   </Link>   
                             
                 </div>

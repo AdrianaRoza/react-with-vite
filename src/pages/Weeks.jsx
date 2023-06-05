@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState } from "react"
 
 const Weeks = () => {
   const [dayOfWeek, setDayOfWeek] = useState([
@@ -37,33 +37,33 @@ const Weeks = () => {
       day_pt: "Sábado",
       translation: "Saturday",
     },
-  ]);
+  ])
 
-  const [editingTranslationId, setEditingTranslationId] = useState(null);
+  const [editingTranslationId, setEditingTranslationId] = useState(null)
 
   const handleClick = (translationId) => {
-    setEditingTranslationId(translationId);
-  };
+    setEditingTranslationId(translationId)
+  }
 
   const handleChange = (event, translationId) => {
     const updatedDayOfWeek = dayOfWeek.map((translation) => {
       if (translation.id === translationId) {
-        return { ...translation, day_pt: event.target.value };
+        return { ...translation, day_pt: event.target.value }
       }
-      return translation;
-    });
-    setDayOfWeek(updatedDayOfWeek);
-  };
+      return translation
+    })
+    setDayOfWeek(updatedDayOfWeek)
+  }
 
   const getTranslatedDay = (translationId) => {
     const translation = dayOfWeek.find(
       (translation) => translation.id === translationId
-    );
-    return translation ? translation.day_pt : "";
-  };
+    )
+    return translation ? translation.day_pt : ""
+  }
 
   return (
-    <ul className="flex flex-col items-center mt-3 text-black">
+    <ul className="flex flex-col items-center mt-3 text-white">
       {dayOfWeek.map((translation) => (
         <li
           key={translation.id}
