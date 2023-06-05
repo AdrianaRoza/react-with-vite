@@ -8,6 +8,8 @@ import Home from "./pages/Home"
 import Layout from "./pages/Layout"
 import Month from "./pages/Month"
 import Weeks from "./pages/Weeks"
+import Opposite from "./pages/Opposite"
+import BodyPart from "./pages/BodyPart"
 
 const App = () => {
   return (
@@ -15,10 +17,12 @@ const App = () => {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Layout />}>
-          <Route index element={<Home />} />
-          <Route path="/login" element={<Login />} />
-          <Route path="/day_of_week" element={<Weeks/>} />
-          <Route path="/month" element={<Month />} />
+            <Route index element={<Home />} />
+            <Route path="/login" element={<Login />} />
+            <Route path="/day_of_week" element={<Weeks/>} />
+            <Route path="/month" element={<Month />} />
+            <Route path="/opposite" element={<Opposite />} />
+            <Route path="/bodypart" element={<BodyPart />} />
           </Route>
         </Routes>
       </BrowserRouter>
