@@ -11,7 +11,6 @@ const BodyPart = () => {
     translation: "Mão"
   }
 ]
-  
   return (
     <div className="flex flex-wrap justify-center p-2 gap-2">
       {

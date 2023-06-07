@@ -10,6 +10,7 @@ import Month from "./pages/Month"
 import Weeks from "./pages/Weeks"
 import Opposite from "./pages/Opposite"
 import BodyPart from "./pages/BodyPart"
+import Form from "./components/Form"
 
 const App = () => {
   return (
@@ -23,6 +24,7 @@ const App = () => {
             <Route path="/month" element={<Month />} />
             <Route path="/opposite" element={<Opposite />} />
             <Route path="/bodypart" element={<BodyPart />} />
+            <Route path="/form" element={<Form />} />
           </Route>
         </Routes>
       </BrowserRouter>

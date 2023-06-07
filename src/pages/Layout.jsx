@@ -41,7 +41,13 @@ const Layout = () => {
                     className="text-gray-300 hover:bg-rose-300 hover:text-white 
                     px-3 py-2 rounded-md text-sm font-medium">
                       Opposite
-                  </Link>   
+                  </Link>
+
+                  <Link to="/form"
+                    className="text-gray-300 hover:bg-rose-300 hover:text-white 
+                    px-3 py-2 rounded-md text-sm font-medium">
+                      Form
+                  </Link>     
                             
                 </div>
               </div>
