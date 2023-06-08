@@ -47,6 +47,18 @@ const Layout = () => {
                     className="text-gray-300 hover:bg-rose-300 hover:text-white 
                     px-3 py-2 rounded-md text-sm font-medium">
                       Form
+                  </Link>
+
+                  <Link to="/NewForm"
+                    className="text-gray-300 hover:bg-rose-300 hover:text-white 
+                    px-3 py-2 rounded-md text-sm font-medium">
+                      NewForm
+                  </Link>
+                  
+                  <Link to='/NewCard'
+                    className="text-gray-300 hover:bg-rose-300 hover:text-white 
+                    px-3 py-2 rounded-md text-sm font-medium">
+                      NewCard
                   </Link>     
                             
                 </div>
