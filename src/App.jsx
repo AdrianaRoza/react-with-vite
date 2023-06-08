@@ -11,6 +11,8 @@ import Weeks from "./pages/Weeks"
 import Opposite from "./pages/Opposite"
 import BodyPart from "./pages/BodyPart"
 import Form from "./components/Form"
+import NewForm from "./components/NewForm"
+import NewCard from "./components/NewCard"
 
 const App = () => {
   return (
@@ -25,6 +27,8 @@ const App = () => {
             <Route path="/opposite" element={<Opposite />} />
             <Route path="/bodypart" element={<BodyPart />} />
             <Route path="/form" element={<Form />} />
+            <Route path="/newform" element={<NewForm />} />
+            <Route path="/newcard" element={<NewCard />} />
           </Route>
         </Routes>
       </BrowserRouter>

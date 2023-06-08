@@ -16,13 +16,13 @@ const CardWord = ({ word, translation}) => {
       {/* FRONT CARD */}
       <div 
 				className="card-front flex justify-center 
-				items-center bg-slate-500"
-			> 
+				items-center bg-slate-500"> 
 				{translation}
       </div>
 
       {/* BACK CARD */}
-      <div className="card-back flex justify-center items-center bg-slate-500"> 
+      <div className="card-back flex justify-center 
+      items-center bg-slate-500"> 
 				{word}
       </div>
 
@@ -31,3 +31,4 @@ const CardWord = ({ word, translation}) => {
 }
 
 export default CardWord
+

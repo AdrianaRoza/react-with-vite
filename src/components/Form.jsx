@@ -8,7 +8,6 @@ const Form = ({ setShowForm }) => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    alert(`O nome que você digitou foi: ${name}`)
     setShowForm(false)
   }
   
