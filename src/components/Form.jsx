@@ -1,17 +1,19 @@
 import React, { useState } from 'react'
 
 
-const Form = () => {
+const Form = ({ setShowForm }) => {
   const [name, setName] = useState("")
   const [traducao, setTraducao] = useState("")
+  
 
   const handleSubmit = (event) => {
     event.preventDefault();
     alert(`O nome que você digitou foi: ${name}`)
+    setShowForm(false)
   }
   
   return (
-    <div className="flex justify-center">
+    
       <form 
         className='flex flex-col items-center rounded-md bg-rose-400 m-2 p-3' 
         onSubmit={handleSubmit}
@@ -44,7 +46,7 @@ const Form = () => {
           hover:text-white text-white px-4 hover:cursor-pointer px-20 py-2' 
         />
       </form>
-    </div>
+   
    )
 }
 
